@@ -98,7 +98,7 @@ npx tsc --init
 
 ### 2-4. 설정 검증
 
-```json
+```bash
 npx ts --showConfig
 npx tsc --noEmit
 ```
