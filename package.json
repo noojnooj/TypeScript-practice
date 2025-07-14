@@ -1,8 +1,7 @@
 {
   "name": "typescript-practice",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "```bash mkdir typescript-practice cd typescript-practice npm init -y ```",
   "homepage": "https://github.com/hyunjoon-1/TypeScript-practice#readme",
   "bugs": {
     "url": "https://github.com/hyunjoon-1/TypeScript-practice/issues"
@@ -16,9 +15,16 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.13",
     "nodemon": "^3.1.10",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
